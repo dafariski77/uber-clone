@@ -137,3 +137,11 @@ declare interface DriverCardProps {
   selected: number;
   setSelected: () => void;
 }
+
+declare interface BaseApiResponse<T> {
+  meta: {
+    code: number;
+    message: string;
+  };
+  data: T;
+}
